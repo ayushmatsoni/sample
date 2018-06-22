@@ -1,3 +1,5 @@
+#Question 1
+
 def nlines(f,n):
     with open(f, encoding="utf8") as file:
         print("LAST ",n,"LINES FROM FILE-->: ",f)
@@ -11,6 +13,7 @@ nlines(name,n)
  #   print("ERROR")
 print("")
 
+#Question 2
 with open("textdemo.txt", encoding="utf8") as file:
     file.seek(0,0)
     wordstring=file.read()
@@ -21,6 +24,7 @@ for i in range(0,len(wordlist)):
     print("TOTAL "+wordlist[i]+"'s IN FILE-->%d"%int(wordlist.count(wordlist[i])))
 
 print("")
+#question3
 try:
     f1=open("textdemo.txt", encoding="utf8")
     f2=open("textdemo2.txt","r+")
@@ -31,7 +35,8 @@ try:
 except Exception:
     print("ERROR")
 
-
+#Question4
+    
 f1 = open("name.txt", "r+")
 f2 = open("name2.txt", "r+")
 print("COMBINED LINES-->")
@@ -40,6 +45,8 @@ for line1, line2 in zip(f1,f2):
 f1.close()
 f2.close()
 
+
+#question5
 print("")
 i=0
 randomlist=[]
